@@ -1,187 +1,185 @@
 {
-  "avg_sentence_count": 18.666666666666668,
-  "stdev_sentence_count": 9.688481133111972,
-  "avg_avg_sentence_length": 21.913275677264828,
-  "stdev_avg_sentence_length": 10.11840546409129,
-  "avg_sentence_length_stdev": 12.692695313596836,
-  "stdev_sentence_length_stdev": 7.888849304598092,
-  "avg_word_count": 301.3333333333333,
-  "stdev_word_count": 168.00912673621832,
-  "avg_unique_word_count": 161,
-  "stdev_unique_word_count": 73.51462439542216,
-  "avg_type_token_ratio": 0.5559335290941609,
-  "stdev_type_token_ratio": 0.05513417132174486,
-  "avg_avg_word_length": 4.19837161645453,
-  "stdev_avg_word_length": 0.3291916613814833,
-  "avg_lexical_diversity": 0.5559335290941609,
-  "stdev_lexical_diversity": 0.05513417132174486,
-  "avg_content_word_ratio": 0.44303537907528057,
-  "stdev_content_word_ratio": 0.040634333515692754,
-  "avg_paragraph_count": 1.1666666666666667,
-  "stdev_paragraph_count": 0.408248290463863,
-  "avg_avg_paragraph_length": 250.33333333333334,
-  "stdev_avg_paragraph_length": 76.20673636015826,
-  "avg_flesch_kincaid_grade": 8.010794720849363,
-  "stdev_flesch_kincaid_grade": 3.8115652282328436,
-  "avg_flesch_reading_ease": 70.740903274881,
-  "stdev_flesch_reading_ease": 14.665395042024922,
-  "avg_gunning_fog": 10.059459003331522,
-  "stdev_gunning_fog": 3.9996242425014183,
-  "avg_contraction_ratio": 0.02202155749577456,
-  "stdev_contraction_ratio": 0.01504408842609341,
+  "avg_sentence_count": 29.6,
+  "stdev_sentence_count": 4.979959839195493,
+  "avg_avg_sentence_length": 9.152519476783151,
+  "stdev_avg_sentence_length": 0.7604081007692017,
+  "avg_sentence_length_stdev": 3.740803415043461,
+  "stdev_sentence_length_stdev": 0.46397388627084224,
+  "avg_word_count": 217.8,
+  "stdev_word_count": 24.32488437793693,
+  "avg_unique_word_count": 138.6,
+  "stdev_unique_word_count": 5.856620185738529,
+  "avg_type_token_ratio": 0.6408604585790669,
+  "stdev_type_token_ratio": 0.054202346945483135,
+  "avg_avg_word_length": 4.432553347450735,
+  "stdev_avg_word_length": 0.10604786076358615,
+  "avg_lexical_diversity": 0.6408604585790669,
+  "stdev_lexical_diversity": 0.054202346945483135,
+  "avg_content_word_ratio": 0.5042971385138579,
+  "stdev_content_word_ratio": 0.024283223689472243,
+  "avg_paragraph_count": 6.6,
+  "stdev_paragraph_count": 1.140175425099138,
+  "avg_avg_paragraph_length": 33.35904761904762,
+  "stdev_avg_paragraph_length": 2.9847146500042707,
+  "avg_flesch_kincaid_grade": 3.976721586417221,
+  "stdev_flesch_kincaid_grade": 0.5060724289425214,
+  "avg_flesch_reading_ease": 80.17174680708303,
+  "stdev_flesch_reading_ease": 2.9785351619061333,
+  "avg_gunning_fog": 5.320916089544159,
+  "stdev_gunning_fog": 0.44274161576685056,
+  "avg_contraction_ratio": 0.04159777119392425,
+  "stdev_contraction_ratio": 0.018746594576339433,
   "top_sentence_starters": [
     [
-      "it \u2019 s",
+      "there 's something",
       2
     ],
     [
-      "they told you",
+      "maybe it 's",
+      2
+    ],
+    [
+      "not in a",
+      2
+    ],
+    [
+      "today was a",
       1
     ],
     [
-      "being 20 is",
+      "got up early",
       1
     ],
     [
-      "but whatever that",
+      "the morning coffee",
       1
     ],
     [
-      "when you were",
+      "you know how",
       1
     ],
     [
-      "to a 10",
+      "spent the first",
       1
     ],
     [
-      "they seem like",
+      "no distractions ,",
       1
     ],
     [
-      "whatever they do",
-      1
-    ],
-    [
-      "you look up",
-      1
-    ],
-    [
-      "and you ,",
+      "this is when",
       1
     ]
   ],
   "top_bigrams": [
     [
-      "to be",
+      "in the",
       2
     ],
     [
-      "don t",
+      "there something",
+      2
+    ],
+    [
+      "i want",
+      2
+    ],
+    [
+      "for the",
       2
     ],
     [
       "i was",
-      2
-    ],
-    [
-      "i have",
-      2
-    ],
-    [
-      "10 year",
       1
     ],
     [
-      "year old",
+      "the best",
       1
     ],
     [
-      "you believed",
+      "is the",
       1
     ],
     [
-      "they told",
+      "part of",
       1
     ],
     [
-      "told you",
+      "today was",
       1
     ],
     [
-      "you that",
+      "was a",
       1
     ]
   ],
   "top_trigrams": [
     [
-      "10 year old",
+      "today was a",
       1
     ],
     [
-      "they told you",
+      "was a solid",
       1
     ],
     [
-      "when you were",
+      "a solid day",
       1
     ],
     [
-      "believed everything they",
+      "solid day got",
       1
     ],
     [
-      "told you that",
+      "day got up",
       1
     ],
     [
-      "you that you",
+      "got up early",
       1
     ],
     [
-      "you believed it",
+      "up early which",
       1
     ],
     [
-      "being 20 is",
+      "early which always",
       1
     ],
     [
-      "20 is not",
+      "which always sets",
       1
     ],
     [
-      "is not easy",
+      "always sets the",
       1
     ]
   ],
   "avg_punctuation": {
-    "periods": 18.5,
-    "commas": 14.333333333333334,
+    "periods": 28.6,
+    "commas": 8.4,
     "semicolons": 0,
-    "colons": 0.5,
+    "colons": 0,
     "exclamation_marks": 0,
-    "question_marks": 0.5,
-    "dashes": 1.3333333333333333,
+    "question_marks": 1,
+    "dashes": 0.2,
     "ellipsis": 0,
-    "parentheses": 0.3333333333333333,
-    "quotes": 1.3333333333333333
+    "parentheses": 0,
+    "quotes": 0
   },
   "avg_pos_distribution": {
-    "PRON": 0.1378125039766772,
-    "VERB": 0.12020352067322652,
-    "PUNCT": 0.10364184070795983,
-    "NOUN": 0.13999622865983882,
-    "ADJ": 0.06443493819493283,
-    "ADP": 0.07754184773800295,
-    "AUX": 0.07452919487201608,
-    "ADV": 0.06659965804672513,
-    "PART": 0.01722997928579915,
-    "CCONJ": 0.014395617204802424,
-    "DET": 0.0503162620632814,
-    "SCONJ": 0.024904182102948706,
-    "SPACE": 0.014492753623188406
+    "NOUN": 0.14317500657287915,
+    "PUNCT": 0.14287112828305523,
+    "VERB": 0.1331670229411251,
+    "PRON": 0.12459285081360627,
+    "ADJ": 0.08412699264940637,
+    "DET": 0.0755163062487485,
+    "ADP": 0.05968942252514518,
+    "AUX": 0.07761404596102556,
+    "ADV": 0.048466242300580456,
+    "SPACE": 0.004273504273504274,
+    "PART": 0.03601493964788518
   },
-  "file_count": 6,
-  "total_files_processed": 6
+  "file_count": 5,
+  "total_files_processed": 5
 }
