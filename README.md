@@ -191,7 +191,7 @@ personal-voice-model/
 ├── sample_draft.md                # Example AI draft
 ├── style_profile.json             # Your extracted features
 ├── writing_style_profile.md       # Your voice profile
-├── train-data/                    # Your journal files (for single-voice mode)
+├── sample-train-data/                    # Your journal files (for single-voice mode)
 │   └── *.txt
 ├── voices/                        # Trained voices
 │   ├── alex/
@@ -200,8 +200,8 @@ personal-voice-model/
 │   │   └── writing_style_profile.md
 │   ├── sarah/
 │   └── [more voices]/
-└── rewrites/                      # Rewritten drafts
-    └── *.md
+└── rewritten-sample_draft.md                      # Rewritten draft
+    
 ```
 
 ---
