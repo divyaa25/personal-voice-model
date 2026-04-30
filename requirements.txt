@@ -1,0 +1,6 @@
+spacy>=3.5.0
+nltk>=3.8.0
+textstat>=0.7.3
+anthropic>=0.25.0
+google-generativeai>=0.3.0
+groq>=0.4.1
