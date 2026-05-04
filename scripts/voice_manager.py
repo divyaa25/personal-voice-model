@@ -100,7 +100,7 @@ def train_voice(voice_name: str, training_data_dir: str) -> bool:
     try:
         os.chdir(voice_dir)
         result = subprocess.run(
-            [sys.executable, "../../stylometric_extractor.py", "train-data"],
+            [sys.executable, "../../scripts/stylometric_extractor.py", "train-data"],
             capture_output=True,
             text=True
         )
@@ -142,7 +142,7 @@ def train_voice(voice_name: str, training_data_dir: str) -> bool:
     try:
         os.chdir(voice_dir)
         result = subprocess.run(
-            [sys.executable, "../../style_profile_generator.py"],
+            [sys.executable, "../../scripts/style_profile_generator.py"],
             capture_output=True,
             text=True,
             input="n\n"  # Skip interactive refinement

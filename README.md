@@ -90,10 +90,10 @@ export API_PROVIDER='groq'
 
 ```bash
 # Stage 1: Extract stylometric features
-python stylometric_extractor.py train-data
+python scripts/stylometric_extractor.py train-data
 
 # Stage 2: Generate voice profile
-python style_profile_generator.py
+python scripts/style_profile_generator.py
 # When prompted, type 'n' to skip interactive refinement
 
 # You now have:
@@ -104,7 +104,7 @@ python style_profile_generator.py
 ### Rewrite a Draft in Your Voice
 
 ```bash
-python draft_rewriter.py my_draft.txt
+python scripts/draft_rewriter.py my_draft.txt
 # Output: rewritten_my_draft.md
 ```
 
@@ -115,10 +115,10 @@ python draft_rewriter.py my_draft.txt
 ### Train a Friend's Voice
 
 ```bash
-python voice_manager.py train friend_name path/to/their/journal/files
+python scripts/voice_manager.py train friend_name path/to/their/journal/files
 
 # Example:
-python voice_manager.py train alex ~/Documents/alex_journals
+python scripts/voice_manager.py train alex ~/Documents/alex_journals
 ```
 
 This automatically:
@@ -129,7 +129,7 @@ This automatically:
 ### List All Trained Voices
 
 ```bash
-python voice_manager.py list
+python scripts/voice_manager.py list
 
 # Output:
 # TRAINED VOICES
@@ -143,13 +143,13 @@ python voice_manager.py list
 ### Rewrite a Draft in a Specific Voice
 
 ```bash
-python voice_manager.py rewrite draft.md --voice alex
+python scripts/voice_manager.py rewrite draft.md --voice alex
 # Output: rewritten_alex_draft.md
 ```
 
 Or specify custom output:
 ```bash
-python voice_manager.py rewrite draft.md --voice alex --output my_version.md
+python scripts/voice_manager.py rewrite draft.md --voice alex --output my_version.md
 ```
 
 ### Batch Rewrite Multiple Drafts
@@ -160,19 +160,19 @@ mkdir drafts
 # Add .txt or .md files to drafts/
 
 # Batch rewrite
-python voice_manager.py batch drafts --voice alex
+python scripts/voice_manager.py batch drafts --voice alex
 # Output: rewrites_alex/ (folder with all rewritten versions)
 ```
 
 With custom output directory:
 ```bash
-python voice_manager.py batch drafts --voice alex --output my_rewrites
+python scripts/voice_manager.py batch drafts --voice alex --output my_rewrites
 ```
 
 ### Delete a Voice
 
 ```bash
-python voice_manager.py delete alex
+python scripts/voice_manager.py delete alex
 ```
 
 ---
@@ -181,17 +181,13 @@ python voice_manager.py delete alex
 
 ```
 personal-voice-model/
-├── stylometric_extractor.py       # Stage 1: Feature extraction
-├── style_profile_generator.py     # Stage 2: Profile generation
-├── draft_rewriter.py              # Stage 3: Draft rewriting
-├── voice_manager.py               # Multi-voice CLI tool
-├── api_provider.py                # API abstraction layer
-├── requirements.txt               # Dependencies
-├── README.md                       # This file
-├── sample_draft.md                # Example AI draft
-├── style_profile.json             # Your extracted features
-├── writing_style_profile.md       # Your voice profile
-├── sample-train-data/                    # Your journal files (for single-voice mode)
+├── scripts/                       # All Python scripts
+│   ├── stylometric_extractor.py   # Stage 1: Feature extraction
+│   ├── style_profile_generator.py # Stage 2: Profile generation
+│   ├── draft_rewriter.py          # Stage 3: Draft rewriting
+│   ├── voice_manager.py           # Multi-voice CLI tool
+│   └── api_provider.py            # API abstraction layer
+├── sample-train-data/             # Sample training data
 │   └── *.txt
 ├── voices/                        # Trained voices
 │   ├── alex/
@@ -200,8 +196,13 @@ personal-voice-model/
 │   │   └── writing_style_profile.md
 │   ├── sarah/
 │   └── [more voices]/
-└── rewritten-sample_draft.md                      # Rewritten draft
-    
+├── drafts/                        # Drafts to rewrite
+│   └── *.txt or *.md
+├── requirements.txt               # Dependencies
+├── README.md                      # This file
+├── style_profile.json             # Extracted features (single voice)
+├── writing_style_profile.md       # Voice profile (single voice)
+└── sample_draft.md                # Example AI draft
 ```
 
 ---
@@ -280,11 +281,11 @@ mkdir my_journals
 python stylometric_extractor.py my_journals
 
 # Step 3: Generate profile
-python style_profile_generator.py
+python scripts/style_profile_generator.py
 # Skip interactive mode: press 'n'
 
 # Step 4: Rewrite a draft
-python draft_rewriter.py ai_blog_post.md
+python scripts/draft_rewriter.py ai_blog_post.md
 # Output: rewritten_ai_blog_post.md
 ```
 
@@ -292,23 +293,23 @@ python draft_rewriter.py ai_blog_post.md
 
 ```bash
 # Train your friend's voice
-python voice_manager.py train maya ~/Documents/maya_blog
+python scripts/voice_manager.py train maya ~/Documents/maya_blog
 
 # Train another friend
-python voice_manager.py train jordan ~/Documents/jordan_emails
+python scripts/voice_manager.py train jordan ~/Documents/jordan_emails
 
 # See all voices
-python voice_manager.py list
+python scripts/voice_manager.py list
 
 # Rewrite draft in Maya's voice
-python voice_manager.py rewrite article.md --voice maya
+python scripts/voice_manager.py rewrite article.md --voice maya
 
 # Rewrite same draft in Jordan's voice
-python voice_manager.py rewrite article.md --voice jordan
+python scripts/voice_manager.py rewrite article.md --voice jordan
 
 # Batch rewrite multiple drafts
-python voice_manager.py batch content_drafts --voice maya --output maya_rewrites
-python voice_manager.py batch content_drafts --voice jordan --output jordan_rewrites
+python scripts/voice_manager.py batch content_drafts --voice maya --output maya_rewrites
+python scripts/voice_manager.py batch content_drafts --voice jordan --output jordan_rewrites
 ```
 
 ---
